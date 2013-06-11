@@ -1,0 +1,10 @@
+%h1
+  Select a partner to pair with
+
+%ul.thumbnails
+  - @users.each do |u|
+    %li.span2
+      %img.img-circle{:src => u.image_url}
+      %p
+        FUN INFO ABOUT ME
+      = link_to "Select me!", "#"

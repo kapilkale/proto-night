@@ -1,0 +1,76 @@
+%br
+%br
+%h2
+  Tell us about yourself.
+
+%br
+%br
+%br
+
+%form.form-horizontal{:action => "/users"}
+  .control-group
+    %label.control-label What is your name?
+    .controls
+      %input{:type => "text", :name => "name", :value => "e.g. Cornelius Fudge"}
+
+  .control-group
+    %label.control-label How old are you?
+    .controls
+      %input{:type => "text", :name => "name", :value => "e.g. 23"}
+
+  .control-group
+    %label.control-label Where are you from?
+    .controls
+      %input{:type => "text", :name => "name", :value => "e.g. Akron, Ohio"}
+
+  %br
+  %br
+
+  %fieldset
+  %p What is most important to you?
+  %select
+    %option
+      Availability
+    %option
+      Experience
+    %option
+      Curiosity
+    %option
+      Friendliness
+
+  %br
+  %br
+
+  %p What kind of dev do you want to be?
+  %select
+    %option
+      Front-end developer
+    %option
+      Full stack developer
+    %option
+      Mobile app developer
+
+  %br
+  %br
+
+  %p How would you fix the below code?
+  = render 'code'
+
+  %br
+  %br
+
+  %select
+    %option
+      Front-end developer
+    %option
+      Full stack developer
+    %option
+      Mobile app develope
+
+%br
+%br
+
+
+  %input.btn.btn-primary{:type => "submit"}
+
+

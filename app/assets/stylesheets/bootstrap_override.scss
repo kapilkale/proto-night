@@ -1,0 +1,21 @@
+@import "bootstrap";
+@font-face {
+  font-family: 'MuseoSans';
+  src: url('/webfonts/MuseoSans_100.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Always scrollbar.
+html, body{
+  font-family: "MuseoSans", "helvetica neue", "helveticaneue", "helveticaneueroman", "helveticaneue-roman", "helvetica neue roman",Arial,Helvetica,Verdana,Tahoma,Sans-serif;
+  height: 101%;
+  font-color: #555;
+}
+
+#all_content {
+  margin: 0 auto;
+  width: 400px;
+  height: 101%
+}
+

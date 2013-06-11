@@ -1,0 +1,13 @@
+%html
+  %head
+    %title
+      Pair
+    = javascript_include_tag "application"
+    = stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag "boostrap_override"
+    = csrf_meta_tags
+
+  %body
+    #all_content
+      #content
+        = yield

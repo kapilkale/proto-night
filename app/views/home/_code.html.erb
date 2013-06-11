@@ -1,0 +1,12 @@
+<pre style="font-size: 12px;">
+# From, to, by are provided by the client.
+s = Sequence.new from, to, by
+
+if s.length < 100
+  s.each do |x|
+    puts x * x
+  end
+else
+  puts 'Sequence too long'
+end
+</pre>
